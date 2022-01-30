@@ -1,6 +1,6 @@
 export default {
-  name: 'post',
-  title: 'Post',
+  name: 'gallery',
+  title: 'Gallery',
   type: 'document',
   fields: [
     {
@@ -24,8 +24,16 @@ export default {
       to: { type: 'author' },
     },
     {
-      name: 'mainImage',
-      title: 'Main image',
+      name: 'image1',
+      title: 'Image 1',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    },
+    {
+      name: 'image2',
+      title: 'Image 2',
       type: 'image',
       options: {
         hotspot: true,
