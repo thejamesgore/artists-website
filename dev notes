@@ -1,2 +1,4 @@
 use sanity.io for CMS
+create database schema
 use react.js or next.js for Frontend
+use GraphQL or GROK to call data
