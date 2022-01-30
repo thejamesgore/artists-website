@@ -11,6 +11,7 @@ function NavBar() {
       </div>
       <div>
         <div>
+          <Link to="/blog">Blog</Link>
           <Link to="/galleries">Galleries</Link>
           <Link to="/about">About</Link>
         </div>
