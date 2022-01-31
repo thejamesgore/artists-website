@@ -27,6 +27,8 @@ function Blog() {
       .catch(console.error)
   }, [])
 
+  console.log(`blog data >>>`, postData)
+
   return (
     <main>
       <section>
