@@ -1,4 +1,6 @@
-use sanity.io for CMS
-create database schema
-use react.js or next.js for Frontend
-use GraphQL or GROK to call data
+use sanity.io for CMS - done
+create database schema - done
+use react.js or next.js for Frontend - done
+use GraphQL or GROK to call data - done
+
+use for loop to go through gallery data or create function that pushes all urls into an array for easy access
