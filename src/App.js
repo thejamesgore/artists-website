@@ -7,6 +7,7 @@ import Galleries from './components/Galleries'
 import About from './components/About.js'
 import Blog from './components/Blog'
 import BlogPost from './components/BlogPost'
+import GalleryPost from './components/GalleryPost'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route exact path="/galleries" element={<Galleries />} />
+        <Route path="/galleries/:slug" element={<GalleryPost />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPost />} />

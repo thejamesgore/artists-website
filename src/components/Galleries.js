@@ -32,8 +32,6 @@ publishedAt,
       .catch(console.error)
   }, [])
 
-  console.log(`MOOSE Knucle >>>`, postData)
-
   return (
     <main>
       <section>
@@ -43,7 +41,10 @@ publishedAt,
           {postData &&
             postData.map((post, index) => (
               <article>
-                <Link to={'/blog/' + post.slug.current} key={post.slug.current}>
+                <Link
+                  to={'/galleries/' + post.slug.current}
+                  key={post.slug.current}
+                >
                   <span key={index}>
                     <img src={post.image1.asset.url} alt={post.image1.alt} />
 
