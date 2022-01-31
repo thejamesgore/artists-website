@@ -36,7 +36,7 @@ function Blog() {
           {postData &&
             postData.map((post, index) => (
               <article>
-                <Link to={'/post/' + post.slug.current} key={post.slug.current}>
+                <Link to={'/blog/' + post.slug.current} key={post.slug.current}>
                   <span key={index}>
                     <img
                       src={post.mainImage.asset.url}

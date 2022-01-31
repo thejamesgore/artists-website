@@ -16,8 +16,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route exact path="/galleries" element={<Galleries />} />
         <Route exact path="/about" element={<About />} />
-        <Route exact path="/blog:slug" element={<BlogPost />} />
         <Route exact path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
       </Routes>
     </BrowserRouter>
   )

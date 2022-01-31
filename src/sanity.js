@@ -1,6 +1,11 @@
 import sanityClient from '@sanity/client'
 
-export default sanityClient({
+const client = sanityClient({
   projectId: 'onybpq7o',
   dataset: 'production',
+  apiVersion: '2021-08-31',
+  token: '',
+  useCdn: false,
 })
+
+export default client
