@@ -4,3 +4,4 @@ use react.js or next.js for Frontend - done
 use GraphQL or GROK to call data - done
 
 use for loop to go through gallery data or create function that pushes all urls into an array for easy access
+add basic styling
