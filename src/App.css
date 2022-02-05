@@ -5,7 +5,7 @@
   padding: 2rem;
 }
 
-.navar-links .Link {
-  display: flex;
-  padding: 2rem;
+.navbar-links {
+  margin: auto;
+  max-width: max-content;
 }
