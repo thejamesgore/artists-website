@@ -32,22 +32,20 @@ function Blog() {
   return (
     <main>
       <section>
-        <h1>Posts</h1>
-        <h2>Posts n ting</h2>
         <div>
           {postData &&
             postData.map((post, index) => (
               <article>
                 <Link to={'/blog/' + post.slug.current} key={post.slug.current}>
                   <span key={index}>
+                    <span>
+                      <h4 className="blog-link">{post.title}</h4>
+                    </span>
                     <img
                       src={post.mainImage.asset.url}
                       alt={post.mainImage.alt}
+                      className="blog-img"
                     />
-
-                    <span>
-                      <h3>{post.title}</h3>
-                    </span>
                   </span>
                 </Link>
               </article>
