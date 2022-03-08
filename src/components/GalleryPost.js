@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+import { Carousel } from 'react-bootstrap'
 import sanityClient from '../sanity'
 
 function Gallery() {
@@ -152,6 +153,25 @@ publishedAt,
   return (
     <div>
       <h1>Gallery Post</h1>
+
+      <Carousel variant="dark">
+        {singlePost?.image1 && (
+          <Carousel.Item>
+            <img src={singlePost.image1.asset.url} alt={singlePost.title} />
+          </Carousel.Item>
+        )}
+
+        <Carousel.Item>
+          <img className="d-block w-100" src="" alt="Second slide" />
+        </Carousel.Item>
+
+
+        <Carousel.Item>
+          <img className="d-block w-100" src="" alt="Third slide" />
+        
+        </Carousel.Item>
+      </Carousel>
+
       <div>
         {singlePost?.image1 && (
           <img src={singlePost.image1.asset.url} alt={singlePost.title} />
