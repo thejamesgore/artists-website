@@ -32,7 +32,9 @@ function Blog() {
   return (
     <main>
       <section>
-        <div>
+        <div className="blog-grid">
+          <div className='grid-item'>
+
           {postData &&
             postData.map((post, index) => (
               <article>
@@ -45,11 +47,13 @@ function Blog() {
                       src={post.mainImage.asset.url}
                       alt={post.mainImage.alt}
                       className="blog-img"
-                    />
+                      />
                   </span>
                 </Link>
               </article>
             ))}
+            
+            </div>
         </div>
       </section>
     </main>
