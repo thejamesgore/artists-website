@@ -50,8 +50,8 @@ function BlogPost() {
                 <img
                   src={urlFor(singlePost.authorImage).url()}
                   alt={singlePost.name}
-                  className="w-10 h-10 rounded-full"
-                />
+                  className="w-10 h-10 rounded"
+                /><div></div>
                 <p className="cursive flex items-center pl-2 text-2xl">
                   {singlePost.name}
                 </p>
