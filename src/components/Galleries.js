@@ -35,22 +35,23 @@ publishedAt,
   return (
     <main>
       <section>
-        <h1>Posts</h1>
-        <h2>Posts n ting</h2>
         <div>
           {postData &&
             postData.map((post, index) => (
-              <article>
+              <article className="gallery-container">
                 <Link
                   to={'/galleries/' + post.slug.current}
                   key={post.slug.current}
                 >
+                  <span>
+                    <h3 className="blog-link">{post.title}</h3>
+                  </span>
                   <span key={index}>
-                    <img src={post.image1.asset.url} alt={post.image1.alt} />
-
-                    <span>
-                      <h3>{post.title}</h3>
-                    </span>
+                    <img
+                      src={post.image1.asset.url}
+                      alt={post.image1.alt}
+                      className="gallery-img"
+                    />
                   </span>
                 </Link>
               </article>

@@ -45,7 +45,7 @@ function BlogPost() {
           <div className="absolute h-full w-full flex items-center justify-center p-8">
             <div className="bg-white bg-opacity-75 rounded p-12">
               <h1
-                className="cursive text-3xl lg:text-6xl mb-4"
+                className="blog-title cursive  text-3xl lg:text-6xl mb-4"
                 style={{ marginTop: '10px' }}
               >
                 {singlePost.title}
