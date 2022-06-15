@@ -52,12 +52,14 @@ function BlogPost() {
               </h1>
             </div>
           </div>
-          <img
-            src={singlePost.mainImage.asset.url}
-            alt={singlePost.title}
-            className="w-full object-cover rounded-t"
-            style={{ height: '400px' }}
-          />
+          <div className="blog-image-container">
+            <img
+              src={singlePost.mainImage.asset.url}
+              alt={singlePost.title}
+              className="w-full object-cover rounded-t "
+              style={{ height: '300px' }}
+            />
+          </div>
         </header>
         <div
           className="px-16 lg:px-48 py-12 lg:py-20 prose lg:prose-xl max-w-full"

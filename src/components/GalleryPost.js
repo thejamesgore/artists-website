@@ -148,12 +148,9 @@ publishedAt,
       .catch(console.error)
   }, [slug])
 
-  console.log(`Gallery data is >>>>`, singlePost)
-
   return (
     <div>
-      {singlePost && <h2 className="title">{singlePost.title}</h2>}
-      <Carousel variant="dark">
+      <Carousel variant="dark" interval={3000} style={{ marginTop: '10px' }}>
         {singlePost?.image1 && (
           <Carousel.Item>
             <img
@@ -352,7 +349,11 @@ publishedAt,
           </Carousel.Item>
         )}
       </Carousel>
-      <div>{singlePost && <p className="text-body">{singlePost.body[0].children[0].text}</p>}</div>
+      <div>
+        {singlePost && (
+          <p className="text-body">{singlePost.body[0].children[0].text}</p>
+        )}
+      </div>
     </div>
   )
 }
