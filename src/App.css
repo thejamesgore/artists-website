@@ -49,3 +49,7 @@
   justify-content: center;
   align-items: center;
 }
+
+.author {
+  background: 'red',
+}
