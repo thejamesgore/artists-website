@@ -53,3 +53,13 @@
 .author {
   background: 'red',
 }
+
+.site-title {
+
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+}
